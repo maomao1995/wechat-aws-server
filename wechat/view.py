@@ -2,6 +2,7 @@ from django.http.response import HttpResponse
 import hashlib
 from django.views.decorators.csrf import csrf_exempt
 
+
 def make_view(robot):
 
     @csrf_exempt
