@@ -34,4 +34,5 @@ def make_view(robot):
         else:
             # 可根据实际需要返回
             return HttpResponse('chenggong')
+
     return werobot_view

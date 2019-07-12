@@ -2,17 +2,18 @@
 
 from werobot import WeRoBot
 from urllib.request import urlretrieve
-import re
 import datetime
 from wechat import tools
+import logging
 
+logging.basicConfig()
 robot = WeRoBot(token='awswechat')
 
 
 # 明文模式不需要下面三项
-robot.config["APP_ID"]='wx354be169ddce26e2'
-robot.config["APP_SECRET"]='6e1138ffb0f1e79a433e15f42da5c90f'
-#obot.config['ENCODING_AES_KEY'] = ''
+# robot.config["APP_ID"]='wx354be169ddce26e2'
+# robot.config["APP_SECRET"]='6e1138ffb0f1e79a433e15f42da5c90f'
+# robot.config['ENCODING_AES_KEY'] = ''
 
 text_path = '/home/ubuntu/wechat/text/'
 image_path = '/home/ubuntu/wechat/image/'
